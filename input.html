@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICHEAL FX Dgoat Trading Website</title>
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/magnific-popup.css">
+    <link rel="shortcut icon" href="BUSINESS/IMAGE/mfxx.jpg">
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="CSS/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="IMAGES/Untitled design (57).webp">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="JS/owl.carousel.min.js"></script>
+    <script src="JS/jquery.magnific-popup.min.js"></script>
+
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+                }
+                
+             .hero {
+            background-image: url(/BUSINESS/IMAGE/FOREX.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .btn-custom {
+            background-color: #ff5733;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-custom img {
+            border-radius: 15px 15px 0 0;
+        }
+        .feature-icons {
+            font-size: 40px;
+            color: #ff5733;
+        }
+        .nav-link{
+            color: #ffffff;
+            font-weight: bolder;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .nav-item{
+             margin-left: 80px;
+             display: flex;
+             justify-content: flex-end;
+             
+        }
+        .lead{
+            color: #ffffff;
+            font-weight: bolder;
+            font-family: serif;
+            font-size: 25px;
+        }
+        .lord{
+            color: #ffffff;
+            font-size: 50px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+         /* ----------------------------------serives-------------------------------- */
+.service-area{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.service-area p{
+    margin-bottom: -5px;
+}
+
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease-in;
+    z-index: 9px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.service-wrap::before, .service-wrap::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;
+}
+.service-wrap::before{
+    top: -37px;
+    left: 100%;
+}
+.service-wrap:hover:before{
+    left:-27px;
+    opacity: 1;
+}
+.service-wrap::after{
+    right:100%;
+    bottom: -37px;
+}
+.service-wrap:hover:after{
+    right:-27px;
+    opacity: 1;
+}
+.service-wrap:hover{
+    color: white;
+}
+.service-wrap h3{
+    color: rgb(0, 0, 0);
+}
+.service-wrap:hover h3{
+    color: white;
+}
+.service-wrap:hover h3::after{
+    color: white;
+}
+
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.service-wrap:hover .service-icon i{
+    transform: rotate(360deg);
+}
+
+.service-wrap h3{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    position:relative;
+    font-family: serif;
+}
+
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* -------------------------TESTIMONIAL---------------------------------- */
+.carousel-inner img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid white;
+    padding: 5px;
+    overflow: hidden;
+}
+.testimonials{
+    background-image: url(/BUSINESS/IMAGE/orange.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 155px;
+    overflow: hidden;
+}
+.testimonials .carousel-indicators{
+    bottom: -60px;
+}
+.border-bottom{
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+.carousel-inner p{
+    font-size: 17px;
+    font-family: serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+/* -----------------------------------QUESTIONS------------------------------------- */
+#accordian .panel{
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#accordian .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+}
+#accordian .pannel-title a{
+    display: block;
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background: #34495e;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    font-family: serif;
+}
+#accordian .pannel-title a::after,
+#accordian .pannel-title a.collapse::after{
+    content: "\f068";
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    border-radius: 50px;
+    background: #34495e;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    border: 5px solid white;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+}
+#accordian .pannel-title a.collapsed::after{
+    content: "\f067";
+}
+#accordian .pannel-title a:hover:after,
+#accordian .pannel-title a.collapsed:hover:after{
+    transform: rotate(360deg);
+}
+.panel-body{
+    padding: 15px;
+    background-color: rgb(238, 238, 238);
+    font-size: 14px;
+    color: black;
+    line-height: 25px;
+    border-top: none;
+    position: relative;
+}
+.panel-heading a{
+    text-decoration: none !important;
+    font-size: 15px !important;
+    font-weight:none;
+}
+.freeimage img{
+    width: 100%;
+}
+
+
+.welcome-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.welcome-about .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 1300px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome-about .text-content {
+    flex: 1;
+    z-index: 1;
+    padding: 20px;
+}
+
+.welcome-about .side-image {
+    flex: 1;
+    margin-top: 20px;
+}
+.text-content h1{
+    color: black;
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 3em;
+}
+.text-content h3{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.text-content p{
+    font-weight: 400;
+    font-size: 20px;
+    font-family: serif;
+}
+p{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+h3{
+    color: black;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+.welcome-about .side-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+
+.welcome-about .read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4ca1af; /* Button color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.welcome-about .read-more-button:hover {
+    background-color: #3b8d99;
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .welcome-about .content {
+        flex-direction: row;
+        padding-left: 20px;
+    }
+
+    .welcome-about .text-content {
+        text-align: left;
+    }
+
+    .welcome-about .side-image {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .welcome-about .side-image img {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-about .content {
+        flex-direction: column;
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+
+    .welcome-about .side-image img {
+        opacity: 0.1;
+    }
+}
+
+.btn-custom {
+            background-color: #ff5733;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+        .mb-0{
+            color: #ffffff;
+            font-family: serif;
+            font-size: 20px;
+        }
+        .mb{
+            font-size: 10px;
+            color: #ffffff;
+        }
+        .navbar-brand{
+            font-size: 40px;
+            font-family: gabriola;
+            font-weight: bolder;
+        }
+        .yoo{
+            color: rgb(0, 0, 0);
+            font-family: gabriola;
+            font-size: 30px;
+        }
+        .dam{
+            font-size: 100px;
+        }
+        .panel-body p{
+            font-size: 18px;
+            font-family: serif;
+        }
+        .sub-heading{
+            font-size: 20px;
+            font-family: serif;
+        }
+        .service-wrap p{
+            font-size: 18px;
+            font-family: serif;
+
+        }
+        .text-white{
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: bolder;
+            font-family: serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">M F X</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.tiktok.com/@realmfx0?_t=ZS-8vFnQSn9Aq0&_r=1">Social handle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pay.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container text-center">
+            <h1 class="lord">Unlock your trading potential</h1>
+            <p class="lead">to financial freedom. Your success starts here.</p>
+            <a href="#cta" class="btn btn-custom btn-lg">Your Reality</a>
+        </div>
+    </section>
+              <!-- -----------------services section------------------------- -->
+  <section class="service-area" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-title text-center">
+            <h2><b>SERVICES</b></h2>
+            <p>
+              <span class="yoo">Making the best out of each traders</span>
+            </p>
+          </div>
+        </div>
+      </div> <br><br>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-wrap text-center">
+            <div class="service-icon">
+              <i class="fa fa-leaf"></i>
+            </div>
+            <h3>Development</h3>
+            <p class="dam">In developing proficiency in forex trading, it is essential to build a strong foundation in market analysis, risk management, and trading psychology. <br> And more</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-wrap text-center">
+            <div class="service-icon">
+              <i class="fa fa-laptop"></i>
+            </div>
+            <h3>Support</h3>
+            <p>Our support includes personalized mentorship, regular check-ins, educational resources,encouragement, and practical tools designed to build confidence and skill</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-wrap text-center">
+            <div class="service-icon">
+              <i class="fa fa-heart"></i>
+            </div>
+            <h3>VIP Treatment</h3>
+            <p class="dam">Our VIP members enjoy exclusive benefits such as one-on-one mentorship with top-tier traders, private trading sessions, early access to strategies, and in-depth market breakdowns.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-wrap text-center">
+            <div class="service-icon">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <h3>Consultation</h3>
+            <p class="dam">Our consultation service is designed to provide traders with direct, personalized guidance tailored to their unique goals, challenges, and trading styles.</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-wrap text-center">
+            <div class="service-icon">
+              <i class="fa fa-diamond"></i>
+            </div>
+            <h3>Design</h3>
+            <p class="dam">At our academy, design is not just about aesthetics — it is about creating an environment that enhances learning, fosters growth, and reflects the excellence we strive for in everything we do</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-wrap text-center">
+            <div class="service-icon">
+              <i class="fa fa-cog"></i>
+            </div>
+            <h3>Live Market Analysis</h3>
+            <p class="dam"> Real-time, in-depth market analysis from expert traders to help you make informed decisions throughout the trading day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="welcome-about">
+    
+    <div class="content">
+        <div class="text-content">
+            <h1>Meet Your Mentor</h1><br>
+            <h3>Am Micheal Mathias <br> <br>Motto: Unlock Your trading potential </h3><br>
+            <p>A professional, profitable and notable forex trader with over 4 years of experience, a thought leader, an investor and a keynote speaker. He is passionate about helping humans through their “grass to grace” journeys. <br> </p>
+
+            <p> A young boy from a poor famliy background, who strive for success. then i realize i am the one to change my families background then i ventured into trading at a young age. <br> Now becoming one of the best traders in Africa </p>
+
+            <p> <b>My breakthrough came from a funded account, if a child's dream came through, WHY WASTE YOUR TIME???</b></p>
+            <a href="" class="read-more-button">Your Reality is Now</a>
+        </div>
+        
+        <div class="side-image">
+            <img src="/BUSINESS/IMAGE/mfxx.jpg" alt="Welcome Image">
+        </di>
+   
+    </div>
+</section>
+
+   <!-- ---------------------------------Testimonial------------------------------------ -->
+   <section class="testimonials" id="testimonial">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 text-center wow fadeInDownBig">
+           <br><br>
+           <h2><b>REVIEWS</b></h2>
+           <div class="sub-heading">
+             <div class="border-bottom"></div>
+           </div>
+         </div>
+       </div>
+       <br><br>
+       <div class="row wow fadeInDown">
+         <div class="col-sm-12">
+           <div id="carousel-testimonials" class="carousel slide" data-ride="carousel"><br>
+             <ol class="carousel-indicators">
+               <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+               <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+             </ol>
+ 
+             <div class="carousel-inner">
+               <div class="item active text-center">
+                 <img src="/BUSINESS/IMAGE/boy.jpeg" class="center-block">
+                 <h2>Samuel Hart</h2>
+                 <H4>Student</H4>
+                 <p>I'm 2 weeks into the mentorship program. It's worth every penny. If you want to understand the financial market take it. It's not just a course but you will also be mentored till you know how to consistently win in the market.</p>
+               </div>
+ 
+ 
+               <div class="item text-center">
+                 <img src="/BUSINESS/IMAGE/woman.jpeg" class="center-block">
+                 <h2>Daniella James</h2>
+                 <H4>Student</H4>
+                 <p>his risk management, his money management, all he does he really inspired me since then I have been seeing some results in my trading mindset.</p>
+ 
+               </div>
+ 
+               <div class="item text-center">
+                 <img src="/BUSINESS/IMAGE/dan.jpeg" class="center-block">
+                 <h2>Mrs lake</h2>
+                 <H4>Follower</H4>
+                 <p> It's not just a course but you will also be mentored till you know how to consistently win in the market. <br>He is the best</p>
+ 
+               </div>
+             </div>
+ 
+           </div>
+   </section>
+ 
+   <!-- ===================================ASK QUEATIONS======================================================== -->
+   <br><br><br>
+   <section class="faq">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12 text-center wow zoomin" data-wow-duration=".4s" data-wow-delay=".4s" >
+           <h2><b>GENERAL FQAs</b></h2>
+           <div class="sub-heading">
+             <p>Here are some general questions that young traders <br>or aspiring traders often ask their mentor or a leader, along with sample answers: </p>
+           </div>
+         </div>
+       </div>
+     </div>
+     <br><br><br>
+ 
+     <div class="container wow bounceInLeft" data-wow-duration=".6s" data-wow-delay=".6s">
+       <div class="row" >
+         <div class="col-md-8">
+           <div class="panel-group" id="accordian">
+             <div class="panel panel-default">
+               <div class="panel-heading" id="headingOne">
+                 <h4 class="pannel-title">
+                   <a href="#collapseOne" class="collapsed" data-toggle="collapse" data-parent="#accordian">How did you start trading and what kept you going?</a>
+                 </h4>
+               </div>
+               <div id="collapseOne" class="panel-collapse collapse in" aria-labelledby="headingone">
+                 <div class="panel-body">
+                   <p>
+                     I started with a small account and a lot of curiosity. What kept me going was the vision of financial freedom and the discipline to learn from losses instead of giving up.</p>
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="panel panel-default">
+               <div class="panel-heading" id="heading  Two">
+                 <h4 class="pannel-title">
+                   <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-parent="#accordian">What is the most important skill in trading?</a>
+                 </h4>
+               </div>
+               <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingtwo">
+                 <div class="panel-body">
+                   <p>
+                     Discipline. You can have the best strategy, but if you lack discipline, you'll still lose money. Risk management and emotional control are also vital.</p>
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="panel panel-default">
+               <div class="panel-heading" id="headingThree">
+                 <h4 class="pannel-title">
+                   <a href="#collapseThree" class="collapsed" class="panel-collapse" data-toggle="collapse"
+                     data-parent="#accordian">How do I handle losses emotionally?</a>
+                 </h4>
+               </div>
+               <div id="collapseThree" class="panel-collapse collapse" aria-labelledby="headingThree">
+                 <div class="panel-body">
+                   <p>
+                    Accept that losses are part of the game. Focus on the bigger picture — consistent growth over time. Always analyze your losses to learn from them.</p>
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="panel panel-default">
+               <div class="panel-heading" id="headingFour">
+                 <h4 class="pannel-title">
+                   <a href="#collapseFour" class="collapsed" data-toggle="collapse" data-parent="#accordian">What mistakes did you make as a beginner?</a>
+                 </h4>
+               </div>
+               <div id="collapseFour" class="panel-collapse collapse" aria-labelledby="headingFour">
+                 <div class="panel-body">
+                   <p>
+                    Overtrading, revenge trading, using high leverage, and not having a plan. These are common — that’s why mentorship matters.</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+ 
+       
+       </div>
+     </div>
+   </section>
+   <br><br><br><br><br>
+ 
+   
+     <!-- Call-to-Action Section -->
+     <section id="cta" class="py-5 text-center bg-dark text-white">
+        <div class="container">
+            <h2 class="display-4 mb-4">Ready to get started?</h2>
+            <p class="lead mb-4">Join thousands of happy customers who are already using our services.</p>
+            <a href="#" class="btn btn-custom btn-lg">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 MICHEAL  FX Dgoat <br> S@mmy Webs</p>
+            <p>Follow us:  &nbsp;
+                <a href="https://www.tiktok.com/@realmfx0?_t=ZS-8vFnQSn9Aq0&_r=1" class="text-white">TIKTOK</a>  
+            </p>
+        </div>
+    </footer>
+
+ 
+ 
+   <script src="/BUSINESS/JS/jquery.ripples-min.js"></script>
+   <script src="/BUSINESS/JS/typed.min.js"></script>
+   <script src="/BUSINESS/JS/script.js"></script>
+   <script src="JS/jquery.waypoints.min.js"></script>
+   <script src="JS/jquery.counterup.min.js"></script>
+   <script src="JS/scroll.js"></script>
+   <script src="JS/ease.js"></script>
+ 
+
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
